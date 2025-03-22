@@ -1,0 +1,356 @@
+
+/* style.css 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #001f3f, #000000);
+    color: white;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4500;
+    transform: scale(1.1);
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #001f3f, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    animation: pulse 3s infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.hero img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.content {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #001f3f;
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #001f3f, #000000);
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+}
+
+.button {
+    background: #001f3f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.3s;
+}
+
+.button:hover {
+    background: #ff4500;
+    transform: scale(1.1);
+}*/
+/* style.css */
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #001f3f, #000000);
+    color: white;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4500;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #001f3f, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    animation: pulse 3s infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.content {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #001f3f, #000000);
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.8);
+}
+/* إضافة قائمة الهامبورجر (ثلاث شرط) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1100;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+/* تحويل الأيقونة عند التفعيل */
+.hamburger.active div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* إعدادات الناف بار عند فتح القائمة */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* تصميم خاص بالأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background: #001f3f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    nav ul.open {
+        right: 0;
+    }
+}
