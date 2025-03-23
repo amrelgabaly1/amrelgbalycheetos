@@ -220,8 +220,8 @@ nav ul {
   button {
     background-color: #001f3f;
     color: white;
-    border: 2px solid white;
-    border-radius: 8px;
+    border: 1px solid white;
+    border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
